@@ -5,6 +5,8 @@
 #include <linux/threads.h>
 #include <linux/percpu-defs.h>
 
+#include <asm/smp.h>
+
 #ifdef CONFIG_SMP
 
 /*

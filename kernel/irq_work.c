@@ -10,6 +10,7 @@
 #include <linux/irq_work.h>
 #include <linux/hardirq.h>
 
+#include <asm-generic/percpu.h>
 /*
  * An entry can be in one of four states:
  *

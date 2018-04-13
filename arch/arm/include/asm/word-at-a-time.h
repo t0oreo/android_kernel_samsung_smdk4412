@@ -13,6 +13,7 @@ struct word_at_a_time {
 	const unsigned long one_bits, high_bits;
 };
 
+#define REPEAT_BYTE(x)	((~0ul / 0xff) * (x))
 #define WORD_AT_A_TIME_CONSTANTS { REPEAT_BYTE(0x01), REPEAT_BYTE(0x80) }
 
 static inline unsigned long has_zero(unsigned long a, unsigned long *bits,
